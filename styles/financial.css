@@ -1,0 +1,60 @@
+.title-section {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.tax-intelligence-title {
+    margin-top: 12px;
+	margin-bottom: 24px;
+}
+
+.solutions-section {
+    max-width: 80%;
+	margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-bottom: 80px;
+}
+
+.solution {
+	width: 45%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	background-color: var(--im-secondary-white);
+	border-top: 5px solid var(--im-yellow);
+	border-radius: 2px;
+	padding: 20px 30px;
+}
+
+.solution hr {
+    background: var(--text-black);
+    width: 100%;
+}
+
+.solution-title {
+    text-align: center;
+}
+
+.black-solution-button {
+	background: var(--text-black);
+	color: var(--im-white);
+
+	width: 180px;
+	height: 40px;
+
+	border: none;
+	border-radius: 5px;
+}
+
+.title-text {
+    color: var(--text-grey);
+    font-weight: 400;
+}

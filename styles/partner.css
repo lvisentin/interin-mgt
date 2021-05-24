@@ -1,0 +1,133 @@
+.black-partner-button {
+	background: var(--text-black);
+	color: var(--im-white);
+
+	width: 180px;
+	height: 40px;
+
+	border: none;
+	border-radius: 5px;
+}
+
+.black-partner-button a {
+	text-decoration: none;
+	color: white;
+}
+
+.intro-section,
+.solutions-section,
+.questions-section {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.intro-section {
+	padding: 80px 0 60px;
+}
+
+.intro-title {
+	margin-bottom: 24px;
+}
+
+.intro-text {
+	color: var(--text-grey);
+	font-weight: 400;
+}
+
+.solutions-title {
+	margin-bottom: 60px;
+}
+
+.div-solutions {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.solution {
+	width: 30%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	background-color: var(--im-secondary-white);
+	border-top: 5px solid var(--im-yellow);
+	border-radius: 2px;
+	padding: 20px;
+}
+
+.solution-ul {
+	padding: 20px;
+}
+
+.solution-li {
+	margin-bottom: 24px;
+	color: var(--text-grey);
+	font-weight: 400;
+}
+
+.solution hr {
+	width: 100%;
+	background: var(--text-black);
+}
+
+.questions-section {
+	padding: 60px 0 60px;
+}
+
+.questions-title {
+	margin-bottom: 60px;
+}
+
+.question-button {
+	width: 100% !important;
+
+	background: var(--im-white) !important;
+	border: none !important;
+	border-bottom: 1px solid #e9e9e9 !important;
+	text-align: left !important;
+
+	padding: 30px 0 !important;
+
+	color: #000 !important;
+
+	font-size: 20px !important;
+}
+
+.question-button:focus {
+	border: none !important;
+	border-color: rgba(0, 0, 0, 0.125);
+	border-bottom-color: #e9e9e9 !important;
+	box-shadow: none;
+}
+
+.accordion-item {
+	border: none;
+}
+
+.accordion-collapse.show .accordion-body {
+	border-bottom: 2px solid var(--im-yellow);
+}
+
+.contact-section {
+	max-width: 80%;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+
+    padding: 80px 0;
+}
+
+.contact-title {
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    width: 250px;
+}
+
