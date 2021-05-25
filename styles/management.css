@@ -1,17 +1,17 @@
 .title-section {
-	max-width: 80%;
-	margin: 0 auto;
-	padding: 60px 0;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 .tax-intelligence-title {
     margin-top: 12px;
-	margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .solutions-section {
     max-width: 80%;
-	margin: 0 auto;
+    margin: 0 auto;
 
     display: flex;
     align-items: flex-start;
@@ -21,17 +21,17 @@
 }
 
 .solution {
-	width: 30%;
+    width: 30%;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-	background-color: var(--im-secondary-white);
-	border-top: 5px solid var(--im-yellow);
-	border-radius: 2px;
-	padding: 20px 30px;
+    background-color: var(--im-secondary-white);
+    border-top: 5px solid var(--im-yellow);
+    border-radius: 2px;
+    padding: 20px 30px;
 }
 
 .solution hr {
@@ -44,17 +44,51 @@
 }
 
 .black-solution-button {
-	background: var(--text-black);
-	color: var(--im-white);
+    background: var(--text-black);
+    color: var(--im-white);
 
-	width: 180px;
-	height: 40px;
+    width: 180px;
+    height: 40px;
 
-	border: none;
-	border-radius: 5px;
+    border: none;
+    border-radius: 5px;
 }
 
 .title-text {
     color: var(--text-grey);
     font-weight: 400;
+}
+
+@media only screen and (max-width: 576px) {
+    section {
+        max-width: 100% !important;
+    }
+
+    .img-section img {
+        display: none;
+    }
+
+    .img-section {
+        width: 100%;
+        height: 200px;
+        background: url("../assets/img/management/img1.png");
+        background-position: center;
+    }
+
+    .solutions-section {
+        flex-direction: column;
+    }
+
+    .title-section {
+        padding: 60px 40px 0;
+    }
+
+    .solutions-section {
+        padding: 40px;
+    }
+
+    .solution {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }

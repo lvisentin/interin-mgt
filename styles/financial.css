@@ -58,3 +58,37 @@
     color: var(--text-grey);
     font-weight: 400;
 }
+
+@media only screen and (max-width: 576px) {
+    section {
+        max-width: 100% !important;
+    }
+
+    .img-section img {
+        display: none;
+    }
+
+    .img-section {
+        width: 100%;
+        height: 200px;
+        background: url("../assets/img/management/img1.png");
+        background-position: center;
+    }
+
+    .solutions-section {
+        flex-direction: column;
+    }
+
+    .title-section {
+        padding: 60px 40px 0;
+    }
+
+    .solutions-section {
+        padding: 40px;
+    }
+
+    .solution {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

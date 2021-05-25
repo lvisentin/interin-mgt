@@ -136,6 +136,14 @@
 		display: none;
 	}
 
+	.nav-row {
+		padding: 20px 10px;
+	}
+
+	.mobile-nav {
+		display: block;
+	}
+
 	.footer-wrapper .up-div {
 		flex-direction: column;
 	}
@@ -146,5 +154,23 @@
 
 	.footer-wrapper .up-div .logos-aside img, .footer-wrapper .up-div .logos-aside p {
 		margin: 0 0 12px;
+	}
+
+	.nav-link.active {
+		font-weight: 500;
+	}
+
+	.dropdown-link {
+		padding: 5px 20px;
+	}
+
+	.dropdown-menu.show {
+		transform: none !important;
+		left: -180px !important;
+		top: 50px !important;
+	}
+
+	.dropdown-main {
+		padding: 0;
 	}
 }

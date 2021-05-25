@@ -1,5 +1,5 @@
 .decision-section {
-	max-width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 
     padding: 80px 0 60px;
@@ -7,7 +7,7 @@
 
 .decision-title {
     color: var(--text-black);
-    
+
     margin-bottom: 24px;
 }
 
@@ -21,7 +21,7 @@
     margin: 0 auto;
 
     padding-bottom: 120px;
-    
+
     display: flex;
     align-items: center;
 }
@@ -37,4 +37,40 @@
 .strategy-text {
     color: var(--text-grey);
     font-weight: 400;
+}
+
+@media only screen and (max-width: 576px) {
+    section {
+        max-width: 100% !important;
+    }
+
+    .img-section img {
+        display: none;
+    }
+
+    .img-section {
+        width: 100%;
+        height: 200px;
+        background: url("../assets/img/about/img1.png");
+        background-position: center;
+    }
+
+    .decision-section {
+        padding: 40px;
+    }
+
+    .strategy-section {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .strategy-section .img-aside img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .strategy-section .text-aside {
+        margin: 0;
+        padding: 40px;
+    }
 }

@@ -167,6 +167,10 @@
 	section {
 		max-width: 100%;
 	}
+	
+	.section-presentation-text {
+		max-width: 80%;
+	}
 
 	.section-expertise {
 		flex-direction: column;
@@ -182,5 +186,18 @@
 		padding: 20px;
 		margin-left: 0;
 		box-sizing: border-box;
+	}
+
+	.solutions-title {
+		text-align: center;
+	}
+
+	.solutions-icons {
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-cta {
+		width: 100%;
 	}
 }
