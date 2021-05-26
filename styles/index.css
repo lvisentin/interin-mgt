@@ -163,11 +163,77 @@
 	color: var(--text-grey);
 }
 
+#modalMkt .modal-body {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("../assets/img/modal.png");
+	background-size: cover;
+	background-position: center;
+	padding: 80px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.modal-content {
+	border-radius: 10px;
+	border: none;
+}
+
+#x-button:hover {
+	cursor: pointer;
+}
+
+.modal-y-button {
+	background-color: var(--im-orange);
+	color: var(--im-white);
+
+	width: 300px;
+	height: 40px;
+
+	border: none;
+	border-radius: 5px;
+}
+
+.modal-y-button a {
+	text-decoration: none;
+	color: white;
+}
+
+.modal-title {
+	color: white;
+	width: 40%;
+	margin-bottom: 24px;
+}
+
+.modal-close {
+	position: absolute;
+	right: 10px;
+	top: -10px;
+	background: white;
+	z-index: 9999;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-text {
+	color: white;
+	font-weight: 400;
+	width: 60%;
+	margin-bottom: 24px;
+}
+
 @media only screen and (max-width: 576px) {
 	section {
 		max-width: 100%;
 	}
-	
+
 	.section-presentation-text {
 		max-width: 80%;
 	}
@@ -198,6 +264,26 @@
 	}
 
 	.section-cta {
+		width: 100%;
+	}
+
+	#modalMkt .modal-body {
+		width: 100%;
+		height: auto;
+		padding: 40px;
+	}
+
+	.modal-title {
+		color: white;
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.modal-close {
+		top: 10px;
+	}
+
+	.modal-text {
 		width: 100%;
 	}
 }
