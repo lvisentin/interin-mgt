@@ -39,7 +39,7 @@ if(isset($_POST['submit'])) {
         if ($mail->send()) header('Location: http://interimmanagement.com.br/contact.php?email=true');
         else header('Location: http://interimmanagement.com.br/contact.php?email=false');
     } catch (\Exception $e) {
-        echo "Erro " . $mail->ErrorInfo;
+        header('Location: http://interimmanagement.com.br/contact.php?email=false');
     }
 } else {
 
