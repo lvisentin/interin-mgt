@@ -113,7 +113,7 @@
 								</li>
 								<li>
 									<a
-										href="contact.html"
+										href="contact.php"
 										class="nav-link active"
 										>Contato</a
 									>
@@ -202,7 +202,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="contact.html"
+                                        href="contact.php"
                                         class="nav-link dropdown-link active"
                                         >Contato</a
                                     >
@@ -247,22 +247,33 @@
 
 				<aside class="form-aside">
 					<div class="contact-form">
-						<form>
+						<?php if (isset($_REQUEST['email']) && $_REQUEST['email'] === 'true') { ?>
+							<p>Recebemos sua mensagem e em breve entraremos em contato!</p>
+						<?php } else if (isset($_REQUEST['email']) && $_REQUEST['email'] === 'false') { ?>
+							<p>Ocorreu um erro ao enviar o email!</p>
+						<?php } ?>
+						<form action="email.php" method="post">
 							<input
 								class="contact-input"
 								placeholder="Nome Completo"
+								name="name"
+								required
 							/>
-							<input class="contact-input" placeholder="E-mail" />
+							<input class="contact-input" name="email" placeholder="E-mail" required />
 							<input
 								class="contact-input"
 								placeholder="Assunto"
+								name="subject"
+								required
 							/>
 							<textarea
 								class="contact-textarea"
 								placeholder="Mensagem"
+								name="message"
+								required
 							></textarea>
 
-							<button class="yellow-white-button form-button">
+							<button type="submit" name="submit" class="yellow-white-button form-button">
 								Enviar Mensagem
 							</button>
 						</form>
@@ -377,3 +388,4 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 </html>
+
