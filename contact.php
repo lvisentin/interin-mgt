@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="styles/global.css" />
 		<link rel="stylesheet" href="styles/contact.css" />
 
-		<title>Interin Management</title>
+		<title>Interim Management</title>
 	</head>
 	<body>
 		<header class="header">
@@ -241,7 +241,7 @@
 						Se preferir, nos envie um e-mail:
 					</h5>
 					<h6 class="email-text">
-						interin.management@grupopanna.com.br
+						interim.management@grupopanna.com.br
 					</h6>
 				</aside>
 
@@ -358,7 +358,7 @@
 			<div class="footer-wrapper">
 				<div class="up-div">
 					<aside class="logos-aside">
-						<p>Interin Management</p>
+						<p>Interim Management</p>
 						<p>Grupo Panna</p>
 					</aside>
 
