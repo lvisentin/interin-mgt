@@ -22,6 +22,11 @@
 	color: var(--text-grey);
 }
 
+.email-text a {
+	text-decoration: underline;
+	color: var(--text-grey);
+}
+
 .email-title {
 	margin: 0;
 }
