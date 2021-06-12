@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="styles/global.css" />
 		<link rel="stylesheet" href="styles/contact.css" />
 
-		<title>Interin Management</title>
+		<title>Interim Management</title>
 	</head>
 	<body>
 		<header class="header">
@@ -114,7 +114,7 @@
 								</li>
 								<li>
 									<a
-										href="contact.html"
+										href="contact.php"
 										class="nav-link active"
 										>Contato</a
 									>
@@ -246,7 +246,7 @@
 						Se preferir, nos envie um e-mail:
 					</h5>
 					<h6 class="email-text">
-						interin.management@grupopanna.com.br
+						interim.management@grupopanna.com.br
 					</h6>
 
 					<h5 class="email-title">
@@ -266,22 +266,33 @@
 
 				<aside class="form-aside">
 					<div class="contact-form">
-						<form>
+						<?php if (isset($_REQUEST['email']) && $_REQUEST['email'] === 'true') { ?>
+							<p>Recebemos sua mensagem e em breve entraremos em contato!</p>
+						<?php } else if (isset($_REQUEST['email']) && $_REQUEST['email'] === 'false') { ?>
+							<p>Ocorreu um erro ao enviar o email!</p>
+						<?php } ?>
+						<form action="email.php" method="post">
 							<input
 								class="contact-input"
 								placeholder="Nome Completo"
+								name="name"
+								required
 							/>
-							<input class="contact-input" placeholder="E-mail" />
+							<input class="contact-input" name="email" placeholder="E-mail" required />
 							<input
 								class="contact-input"
 								placeholder="Assunto"
+								name="subject"
+								required
 							/>
 							<textarea
 								class="contact-textarea"
 								placeholder="Mensagem"
+								name="message"
+								required
 							></textarea>
 
-							<button class="yellow-white-button form-button">
+							<button type="submit" name="submit" class="yellow-white-button form-button">
 								Enviar Mensagem
 							</button>
 						</form>
@@ -366,10 +377,14 @@
 			<div class="footer-wrapper">
 				<div class="up-div">
 					<aside class="logos-aside">
+<<<<<<< HEAD:contact.html
 						<img class="logos-aside-img" src="./assets/img/small-logo.png" />
 						<p>Interin Management</p>
 
 						<img class="logos-aside-img" src="./assets/img/logopanna.png" />
+=======
+						<p>Interim Management</p>
+>>>>>>> 1731b70277c418a16f252071d204bc5e633113fb:contact.php
 						<p>Grupo Panna</p>
 					</aside>
 
@@ -408,3 +423,4 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 </html>
+
