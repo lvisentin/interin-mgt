@@ -41,6 +41,9 @@
 
 .advisor-subtitle {
     font-weight: 400;
+
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .advisor-body {
