@@ -259,7 +259,7 @@
 						<img src="./assets/img/whatsapp.svg" width="24" height="24">
 						
 						<a
-							href="https://api.whatsapp.com/send?phone=5515981340092"
+							href="https://api.whatsapp.com/send?phone=5515996002800"
 							>Murilo - (15) 98134-0092</a
 						>
 					</h6>
@@ -380,15 +380,11 @@
 			<div class="footer-wrapper">
 				<div class="up-div">
 					<aside class="logos-aside">
-<<<<<<< HEAD:contact.html
 						<img class="logos-aside-img" src="./assets/img/small-logo.png" />
-						<p>Interin Management</p>
 
 						<img class="logos-aside-img" src="./assets/img/logopanna.png" />
-=======
-						<p>Interim Management</p>
->>>>>>> 1731b70277c418a16f252071d204bc5e633113fb:contact.php
-						<p>Grupo Panna</p>
+
+						<img class="logos-aside-img" src="./assets/img/logoburh.png">
 					</aside>
 
 					<aside class="social-aside">
