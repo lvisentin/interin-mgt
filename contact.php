@@ -260,7 +260,7 @@
 						
 						<a
 							href="https://api.whatsapp.com/send?phone=5515996002800"
-							>Murilo - (15) 98134-0092</a
+							>Murilo - (15) 99600-2800</a
 						>
 					</h6>
 
